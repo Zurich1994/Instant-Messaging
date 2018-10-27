@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/friendmsgbg"
+    android:orientation="vertical" >
+
+    <Button
+        android:id="@+id/menu_findfriend"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@null"
+        android:drawableLeft="@drawable/ic_drawer_search_normal"
+        android:paddingLeft="50dp"
+        android:text="查找好友"
+        android:gravity="left|center_vertical"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/menu_altermsg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@null"
+        android:drawableLeft="@drawable/ic_drawer_setting_pressed"
+        android:paddingLeft="50dp"
+        android:text="修改个人资料"
+        android:gravity="left|fill_vertical"
+        android:textSize="20sp" />
+
+</LinearLayout>

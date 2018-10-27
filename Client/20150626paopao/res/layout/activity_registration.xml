@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/friendmsgbg"
+    android:orientation="horizontal"
+    android:paddingTop="20px" >
+
+    <LinearLayout
+        android:id="@+id/lL21"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="2"
+        android:orientation="vertical"
+        android:paddingLeft="20px" >
+
+        <TableLayout
+            android:id="@+id/tL2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <TableRow
+                android:id="@+id/tR21"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:id="@+id/name_IV"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="用户名:"
+                    android:textColor="#000000"
+                    android:textSize="20sp" />
+
+                <EditText
+                    android:id="@+id/registration_account"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:minWidth="200px"
+                    android:textSize="24px" />
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/tR22"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:id="@+id/password_IV"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="密  码:"
+                    android:textColor="#000000"
+                    android:textSize="20sp" />
+
+                <EditText
+                    android:id="@+id/registration_password"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:inputType="textPassword"
+                    android:textSize="24px" >
+                </EditText>
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/tR23"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="确  认:"
+                    android:textColor="#000000"
+                    android:textSize="20sp" />
+
+                <EditText
+                    android:id="@+id/registration_repassword"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:inputType="textPassword"
+                    android:textSize="24px" />
+            </TableRow>
+        </TableLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/lL22"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center_horizontal"
+        android:orientation="vertical" >
+
+        <ImageView
+            android:id="@+id/head_IV"
+            android:layout_width="158px"
+            android:layout_height="150px"
+            android:adjustViewBounds="true"
+            android:src="@drawable/ic_launcher" />
+
+        <Button
+            android:id="@+id/registration_photo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="选择头像" />
+
+        <Button
+            android:id="@+id/registration_submit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:text="提    交" />
+    </LinearLayout>
+
+</LinearLayout>
